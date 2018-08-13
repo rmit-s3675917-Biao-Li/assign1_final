@@ -86,7 +86,7 @@ public class apartment extends property {
 	}
 
 	@Override
-	public boolean rent(String customerId, DateTime rentDate, int numOfRentDay) 
+	public boolean rent(String customerId, DateTime rentDate, int numOfRentDay) {
 		if (this instanceof suite) {
 			if (DateTime.diffDays(rentDate, getLastMaintenance()) + numOfRentDay > 10) {
 				System.out.println("This Premium Suite is needed to be maintained first! ");
