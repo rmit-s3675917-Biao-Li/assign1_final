@@ -15,8 +15,11 @@ package assignment_1_final;
 		 private record[] rentRecords = new record[10];
 		 private record currentRecord;
 		 private DateTime lastMaintenance = new DateTime(0,0,0);
-		 boolean getwaiting;
+		 private boolean getwaiting;
 		
+		public void setGetwaiting(boolean getwaiting) {
+			this.getwaiting = getwaiting;
+		}
 		public property(String id, String type, String stnum, String stname, String suburb, int bednum) {
 			this.id = id;
 			this.stname = stname;

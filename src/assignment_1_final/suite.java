@@ -34,12 +34,13 @@ public class suite extends apartment {
 				return true;
 			} else {
 				setLastMaintenance(completionDate);
-				getwaiting = true;
+				setGetwaiting(true);
 				return false;
 			}
 		} else
 			return false;
 	}
+
 
 	public String toString() {
 		String s = getId() + ":" + getStnum() + ":" + getStname() + ":" + getSuburb() + ":" + "Premium Suite:"
